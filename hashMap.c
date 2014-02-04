@@ -1,3 +1,11 @@
+/*
+        DESCRIPTION: Implementation of a Hash Map with some basic fuctions: insert, delete, display, search.
+        AUTHOR: Shabhri Naresh
+        EMAIL: shabhri.naresh@gmail.com
+        VERSION: 1.0
+*/
+
+
 #include <stdio.h>
 #include "list.h"
 #include "hashMap.h"
