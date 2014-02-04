@@ -7,36 +7,6 @@
 
 #include "list.h"
 #include <stdio.h>
-
-
-int list_push(int num, node **start)
-{
-	node *temp, *pNode;
-	pNode = (node *)malloc(sizeof(node));
-	
-	if(pNode==NULL){
-		return -1;	//memory allocation failure
-	}
-		else{
-		pNode->data = num;
-		pNode->next=NULL;
-
-		if(*start==NULL){
-			printf("List is empty now...bwdfh\n");
-			*start = pNode;
-			printf("first node  inserted successfully with value %d\n", pNode->data);			
-		}
-
-		else{
-			temp = *start;
-			
-			//traversing through the list
-			while(temp->next!=NULL){
-				temp = temp->next;			
-			}
-
-			temp->next = pNode; // inserting the node at end of List
-			printf("Node inserted successfully with value %d\n", num);
 				
 		}
 		return 0;
